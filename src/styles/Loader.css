@@ -5,7 +5,7 @@
     height: 50px;
     border: 3px solid #d6d6d6;
     border-radius: 50%;
-    border-top-color: crimson;
+    border-top-color: rgb(81, 118, 177);
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
     margin-right: 10px;

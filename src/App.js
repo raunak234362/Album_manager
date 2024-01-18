@@ -37,7 +37,6 @@ function App() {
     setIsloading(true);
     // sending request to add new album
     const data = await addAlbum(userid, title);
-    // console.log(data);
     // adding album into current albums list
     setAlbums([
       ...albums,
@@ -68,7 +67,6 @@ function App() {
 
   // when user clicks delete button
   const handleDeleteAlbum = async(ID) => {
-    // console.log(ID);
     // starts loading
     setIsloading(true);
     // sending request to delete album
@@ -78,7 +76,6 @@ function App() {
     const filteredAlbum = albums.filter(alb => {
       return alb.id !== ID ;
     })
-    // console.log(filteredAlbum);
     // updating albums list
     setAlbums(filteredAlbum);
     // stops loading

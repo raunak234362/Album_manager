@@ -5,7 +5,7 @@ function Album(props) {
     // extracting all info from props
     const {userId, id, title, handleClick, handleDelete} = props;
     // different useStae hooks to store info
-    const [UserId, setUserId] = useState(userId);
+    const [UserId] = useState(userId);
     const [Title, setTitle] = useState(title);
     const [update, setUpdate] = useState(false);
     // const [popup, setPopup] = useState(false);
@@ -45,8 +45,7 @@ function Album(props) {
           </div>
         <div className="heading">
           {/* headings */}
-          <h1>Want to update album name ?</h1>
-          <h3>Fill below form to update !!</h3>
+          <h2>Fill below form to update the Album Name!!</h2>
         </div>
         <div className="body">
           {/*  form for taking updated data from user */}

@@ -8,11 +8,11 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   }
 
   return (
-    <nav className='mt-4 d-flex justify-content-center align-items-center '>
+    <nav>
       <ul style={styles.pagination}>
         {pageNumbers.map(number => (
           <li key={number} style={styles.pageItem} className='page-item display-6'>
-            <a onClick={() => paginate(number)} href='!#' className='page-link'>
+            <a onClick={() => paginate(number)} href='!#' style={styles.pageLink} className='page-link'>
               {number}
             </a>
           </li>
@@ -33,7 +33,15 @@ const styles = {
     alignItems: 'center',
   },
   pageItem:{
-    paddingRight:'1rem',
-  }
+    backgroundColor:'rgb(69, 134, 139)',
+    padding:'15px',
+    borderRadius:'30px',
+    margin:'.5rem',
+    cursor:'pointer'
+  },
+  pageLink: {
+    textDecoration: 'none',
+    color: 'white', // Adjust text color for better visibility
+  },
   
 }

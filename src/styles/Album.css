@@ -1,15 +1,15 @@
 .AlbumContainer {
-  width: 30%; /* Adjust the width as needed */
+  width: 30%;
   min-height: 20px;
   padding: 10px;
   margin-right: 1%;
-  margin: 1%; /* Add a small margin between items */
+  margin: 1%;
   background-color: rgb(190, 207, 209);
   border: 1px solid wheat;
   border-radius: 8px;
   padding-right: 35px;
-  box-sizing: border-box; /* Include padding and border in the width calculation */
-  display: inline-block; /* Use inline-block to make items appear in a row */
+  box-sizing: border-box; 
+  display: inline-block;
 }
 
 .AlbumContainer:hover {
@@ -73,40 +73,42 @@
 }
 
 .updatePopup {
+    margin-top:5rem;
+    margin-left: 20%;
     position: fixed;
     top: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 70vh;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #c9c9c9;
+    background-color: #4c586f;
+    border-radius: 20px;
   }
   .updateContainer {
-      margin-top: 150px;
-      height: 500px;
-      width: 500px;
+      margin-top: 15px;
+      height: 400px;
+      width: 600px;
       border-radius: 10px;
-      background-color: #fff;
+      background-color: #84a4b9;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: rgb(120, 192, 211);
 
   }
   .updateContainer .heading {
       text-align: center;
       color: white;
+      margin-top: 30px;
   }
   .updateContainer .body {
       width: 70%;
       text-align: center;
-      color: coral;
+      color: rgb(51, 84, 118);
       font-weight: bold;
       
   }
   .updateContainer .body .form {
-      margin-top: 20px;
       font-size: 1.3rem;
   }
   #input {
@@ -118,13 +120,13 @@
   }
   .formBtn {
     width: 150px;
-    height: 45px;
-    margin: 10px;
+    height: 35px;
+    margin: 5px;
     border: none;
     background-color: cornflowerblue;
     color: white;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 10px;
     cursor: pointer;
   }
   .cross {

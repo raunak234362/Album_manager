@@ -30,14 +30,10 @@ const styles = {
     height: '45px',
     margin: '10px',
     border: 'none',
-    backgroundColor: '#c54873',
+    backgroundColor: 'rgb(81, 118, 177)',
     color: 'white',
     borderRadius: '8px',
     fontSize: '20px',
     cursor: 'pointer',
-    transition:'.2s ease-in-out'
   },
-  addAlbumBtnHover:{
-    backgroundColor:'rgb(0, 122, 141)'
-  }
 }
