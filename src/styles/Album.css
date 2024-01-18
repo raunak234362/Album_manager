@@ -1,0 +1,142 @@
+.AlbumContainer {
+  width: 30%; /* Adjust the width as needed */
+  min-height: 20px;
+  padding: 10px;
+  margin-right: 1%;
+  margin: 1%; /* Add a small margin between items */
+  background-color: rgb(190, 207, 209);
+  border: 1px solid wheat;
+  border-radius: 8px;
+  padding-right: 35px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  display: inline-block; /* Use inline-block to make items appear in a row */
+}
+
+.AlbumContainer:hover {
+  background-color: rgb(197, 245, 238);
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.AlbumContainer .details {
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.titleName{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin-left: 2rem;
+}
+
+.idName{
+  background-color: rgb(213, 233, 255);
+  margin-left: 2rem;
+  border: #c9c9c9;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.AlbumContainer .actions {
+  display: flex;
+  margin-top:1rem;
+  margin-left: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.AlbumContainer .actions > button {
+  width: 80px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(83, 164, 204);
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.AlbumContainer .actions > button:hover {
+  background-color: rgb(57, 128, 177);
+  transition: 0.2s ease-in-out;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+.updatePopup {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #c9c9c9;
+  }
+  .updateContainer {
+      margin-top: 150px;
+      height: 500px;
+      width: 500px;
+      border-radius: 10px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(120, 192, 211);
+
+  }
+  .updateContainer .heading {
+      text-align: center;
+      color: white;
+  }
+  .updateContainer .body {
+      width: 70%;
+      text-align: center;
+      color: coral;
+      font-weight: bold;
+      
+  }
+  .updateContainer .body .form {
+      margin-top: 20px;
+      font-size: 1.3rem;
+  }
+  #input {
+      margin-top: 10px;
+      width: 100%;
+      border: none;
+      padding: 4px;
+
+  }
+  .formBtn {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .cross {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+  .cross>button {
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: crimson;
+  }
