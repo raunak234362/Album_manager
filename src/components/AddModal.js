@@ -24,7 +24,7 @@ function AddModal({setCloseModal, handleAddAlbum}) {
           <div className="body">
               <label> User ID</label> 
               {/* enter user id */}
-              <input type="number" value={id} onChange={(e) => setId(e.target.value)} placeholder='Enter user id' /> <br />
+              <input className='input' type="number" value={id} onChange={(e) => setId(e.target.value)} placeholder='Enter user id' /> <br />
               <label >Title</label>
               {/* enter title */}
               <input className='input' type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title of your album" /> <br />

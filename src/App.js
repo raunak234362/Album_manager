@@ -7,11 +7,11 @@ import Navbar from "./components/Navbar";
 import Pagination from "./components/Pagination";
 
 function App() {
-  // to store all the albums which we fetched from the the api we used albums, setAlbums
+  // to store all the albums which fetched from the the api used albums, setAlbums
   const [albums, setAlbums] = useState([]);
-  // if user clicked add album then to show popup modal we used this hook
+  // if user clicked add album then to show popup modal
   const [addAlbumPopup, setAddAlbumPopup] = useState(false);
-  // whenever system is fetching info from api we display loader, this indacator helps in displaying loader
+  // whenever system is fetching info from api display loader, this indacator helps in displaying loader
   const [isloading, setIsloading] = useState(true);
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -19,7 +19,7 @@ function App() {
 
 
   useEffect(() => {
-    // here we will fetch all albums data from api
+    // fetch all albums data from api
     const getData = async() => {
       const data = await getAlbums();
       // setting data into albums
@@ -52,7 +52,7 @@ function App() {
     setIsloading(true);
     // sending request to update current album data
     const data =  (await updateAlbum(ID, UserId, Title)).data;
-    // when album is updated, we update that particular album from the list
+    // when album is updated, update that particular album from the list
     const updatedAlbum = albums.map(obj => {
       if(obj.id === ID){
         return {...obj, title: data.title, userId: data.userId}
@@ -72,7 +72,7 @@ function App() {
     // sending request to delete album
     const data = (await deleteAlbum(ID)).data;
     console.log(data);
-    // once the album is deleted we remove that album from the list
+    // once the album is deleted remove that album from the list
     const filteredAlbum = albums.filter(alb => {
       return alb.id !== ID ;
     })

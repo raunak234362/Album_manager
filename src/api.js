@@ -1,4 +1,4 @@
-// common function to make api requests
+//function to make api requests
 const customFetch = async(url, {body, ...customConfig}) => {
     // defining header
     const headers = {
@@ -20,7 +20,7 @@ const customFetch = async(url, {body, ...customConfig}) => {
         const response = await fetch(url, config);
         const data = await response.json();
 
-        // if we receive data from the api then we pass otherwise we throw error
+        // data receive from the api then pass otherwise throw error
         if(data){
             return {
                 data,
@@ -40,7 +40,7 @@ const customFetch = async(url, {body, ...customConfig}) => {
 export const getAlbums = () => {
     return customFetch('https://jsonplaceholder.typicode.com/albums', {
         method: 'GET'
-    });
+    }); 
 }
 // to add album into albums list
 export const addAlbum = (userid, title) => {
