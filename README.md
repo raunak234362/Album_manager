@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Album Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Album Manager, a React-based web application for managing your albums. This simple application allows you to interact with a dummy API to perform basic CRUD operations on albums.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Fetch and Display Albums**
+   - Utilizes the [JSONPlaceholder](https://jsonplaceholder.typicode.com/albums) API to fetch and display albums.
+   - Renders album information, including title and ID.
 
-### `npm start`
+2. **Add an Album**
+   - Performs a dummy POST request to [JSONPlaceholder](https://jsonplaceholder.typicode.com/albums) to simulate adding an album.
+   - Saves the newly added album in the React state.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Update an Album**
+   - Simulates updating an album by making a dummy PUT request to [JSONPlaceholder](https://jsonplaceholder.typicode.com/albums).
+   - Reflects the changes in the React state.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Delete an Album**
+   - Simulates deleting an album by making a dummy DELETE request to [JSONPlaceholder](https://jsonplaceholder.typicode.com/albums).
+   - Updates the React state to reflect the removal of the album.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/raunak234362/Album_manager   ```
 
-### `npm run build`
+2. Navigate to the project directory.
+   ```bash
+   cd album-manager
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Run the application.
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the Album Manager app.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
+![image](https://github.com/raunak234362/Album_manager/assets/64278503/848d0630-a471-4a81-9ac2-96d06838970c)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="960" alt="image" src="https://github.com/raunak234362/Album_manager/assets/64278503/4229695a-d58d-4bad-a38d-67482297c98c">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="960" alt="image" src="https://github.com/raunak234362/Album_manager/assets/64278503/37edb6a7-2806-4ee8-a9dc-aad6a61e07d0">
